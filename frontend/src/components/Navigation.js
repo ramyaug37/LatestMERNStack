@@ -34,15 +34,31 @@ function Navigation() {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
-        <LinkContainer to="/">
-          <Navbar.Brand>Ecomern</Navbar.Brand>
+        <LinkContainer
+          to="/"
+          style={{
+            fontSize: "50px",
+            fontWeight: "bold",
+            color: "blue",
+            textDecoration: "none",
+          }}
+        >
+          <Navbar.Brand>TechNest</Navbar.Brand>
         </LinkContainer>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             {/* if no user */}
             {!user && (
-              <LinkContainer to="/login">
+              <LinkContainer
+                to="/login"
+                style={{
+                  fontSize: "24px",
+                  fontWeight: "bold",
+                  color: "black",
+                  textDecoration: "none",
+                }}
+              >
                 <Nav.Link>Login</Nav.Link>
               </LinkContainer>
             )}
